@@ -40,7 +40,7 @@ class AuthController extends GetxController{
       'password': password
     })
         .then((value) {
-      Get.offAllNamed(Routes.bottomNavigationBar);
+      Get.offAllNamed(Routes.home);
       preferenceHelper.saveIsLoggedIn(true);
 
 
@@ -69,8 +69,8 @@ class AuthController extends GetxController{
         Get.offAllNamed(Routes.bottomNavigationBar);
       }else{
         Utils.hideLoader();
-        // Utils.errorSnackBar("Please check creds");
-        Get.showSnackbar(GetSnackBar(message: "No User Found",));
+         Utils.errorSnackBar("Please check creds");
+        // Get.showSnackbar(GetSnackBar(message: "No User Found",));
       }
     }
   }

@@ -5,5 +5,6 @@
   static const login="/login";
   static const signup="/signup";
   static const bottomNavigationBar="/bottomNavigationBar";
+  static const movieDetails="/movieDetails";
   }
 

@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:task_with_login/helper/routes/routes.dart';
 import 'package:task_with_login/home_screen.dart';
 import 'package:task_with_login/login_screen.dart';
+import 'package:task_with_login/movie_details.dart';
 import 'package:task_with_login/signup_screen.dart';
 
 
@@ -22,6 +23,9 @@ class RoutesGenerator{
         break;
       case Routes.login:
         widgetScreen = LoginScreen();
+        break;
+      case Routes.movieDetails:
+        widgetScreen = MovieDetailScreen(movieId: args as int,);
         break;
       // case Routes.bottomNavigationBar:
       //  // widgetScreen = BottomNavigationBarScreen();
